@@ -148,7 +148,7 @@ a {
 
 .logo {
   position: relative;
-  top: 657px;
+  top: 658px;
   height: 10vh;
 }
 
@@ -190,9 +190,10 @@ a {
 
 .showcase {
   background: whitesmoke;
-  padding: 20px 50px 0 0;
+  padding: 20px 50px 50px 0;
   position: relative;
   top: 900px;
+  height: 250vh;
 }
 
 .showcase .showcase__titles {
@@ -216,6 +217,8 @@ a {
 }
 
 .showcase .showcase__menu {
+  position: relative;
+  top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -244,18 +247,20 @@ a {
   border-right: 1px solid rgba(0, 0, 0, 0.304);
   border-bottom: 1px solid rgba(0, 0, 0, 0.304);
   border-radius: 10px;
-  margin: 40px 0 0 15px;
+  margin: 40px 0 40px 25px;
   -webkit-box-shadow: -1px 1px 1.5px rgba(0, 0, 0, 0.304);
           box-shadow: -1px 1px 1.5px rgba(0, 0, 0, 0.304);
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
+  width: 250px;
+  height: 330px;
 }
 
 .showcase .showcase__menu .row1 .card img,
 .showcase .showcase__menu .row2 .card img,
 .showcase .showcase__menu .row3 .card img {
-  width: 290px;
-  height: 250px;
+  width: 250px;
+  height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
   margin-top: 0;
@@ -286,6 +291,7 @@ a {
   font-size: 1.3rem;
   font-weight: 600;
   margin: 10px 10px 10px 10px;
+  text-transform: capitalize;
 }
 
 .showcase .showcase__menu .row1 .card .description .short__descriptions .price,
@@ -320,7 +326,7 @@ a {
 }
 
 .showcase .showcase__more-info {
-  margin: 20px 0 0 0;
+  margin: 30px 0 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -347,8 +353,80 @@ a {
 }
 
 .showcase .showcase__more-info .showcase__link:hover {
-  background: rgba(179, 121, 13, 0.626);
-  color: rgba(0, 0, 0, 0.845);
+  background: black;
+  color: #b3790d;
+}
+
+.testimonial {
+  position: relative;
+  top: 902px;
+  height: 50vh;
+  background: black;
+  color: white;
+}
+
+.testimonial .testimonialz {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  top: 40px;
+}
+
+.testimonial .testimonialz .testimonial__img img {
+  width: 250px;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  margin: 0 50px 0 0;
+}
+
+.testimonial .testimonialz .testimonial__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.testimonial .testimonialz .testimonial__text .testimony {
+  font-size: 1.25rem;
+  text-align: justify;
+  margin: 0 0 20px 0;
+}
+
+.testimonial .testimonialz .testimonial__text .testimonial__person {
+  font-weight: 900;
+  color: #b3790d;
+}
+
+.contact {
+  position: relative;
+  top: 1000px;
+}
+
+.contact .contact__section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.contact .contact__section .contact__right img {
+  height: 100vh;
+  width: 50%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 @media all and (max-width: 1029px) {
