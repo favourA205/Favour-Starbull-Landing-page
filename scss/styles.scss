@@ -350,16 +350,92 @@ a {
 
 .contact {
   position: relative;
-  top: 1000px;
+  top: 902px;
 
   .contact__section {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+
+    .contact__left {
+      position: relative;
+      margin-top: 80px;
+      left: 80px;
+
+      .contact__titles {
+        position: relative;
+        top: 20px;
+        left: 40px;
+        .contact__title {
+          font-size: 2rem;
+          margin: 0 0 10px 0;
+
+          span {
+            color: $common_color;
+          }
+        }
+
+        .contact__subtitle {
+          font-size: 1.1rem;
+          margin: 0 0 10px 0;
+        }
+      }
+
+      .contact__form {
+        margin-top: 40px;
+        span {
+          position: relative;
+          background: rgba(0, 0, 0, 0.742);
+          border-radius: 50%;
+          padding: 19px;
+          color: white;
+          margin-left: 1rem;
+          left: 80px;
+          bottom: 30px;
+          box-shadow: -1px 1px 1px $black_color;
+          cursor: pointer;
+          transition: all 0.4s ease;
+        }
+
+        span:hover {
+          background-color: $common_color;
+          color: white;
+        }
+
+        .contact__first-batch {
+          position: relative;
+          margin: 4.5rem 0;
+
+          .contact__one {
+            display: inline-block;
+            margin-bottom: 2.5rem;
+          }
+
+          .contact__two {
+            display: inline-block;
+            margin-bottom: 2.5rem;
+          }
+
+          .contact__three {
+            display: inline-block;
+          }
+        }
+
+        .contact__second-batch {
+          position: relative;
+          top: -127px;
+          left: 75px;
+
+          .contact__four {
+            display: inline-block;
+            margin-right: 5px;
+          }
+        }
+      }
+    }
 
     .contact__right {
       img {
         height: 100vh;
-        width: 50%;
         object-fit: contain;
       }
     }
