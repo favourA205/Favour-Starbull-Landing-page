@@ -127,7 +127,7 @@ a {
 }
 
 .home .home__intro .home__contact {
-  margin-top: 15px;
+  margin-top: 25px;
 }
 
 .home .home__intro .home__contact .home__link {
@@ -153,14 +153,21 @@ a {
 }
 
 .logo .logo__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: relative;
   top: 30px;
   font-size: 1.7rem;
-  margin: 0 0 0 15px;
+  margin: 0 0 28px 15px;
 }
 
 .logo .logo__description span {
   color: #b3790d;
+  margin: 0 10px 0 10px;
 }
 
 .logo .logo__group {
@@ -326,7 +333,7 @@ a {
 }
 
 .showcase .showcase__more-info {
-  margin: 30px 0 0 0;
+  margin: 70px 0 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -343,7 +350,7 @@ a {
       -ms-flex-align: center;
           align-items: center;
   color: white;
-  background: #b3790d;
+  background: rgba(0, 0, 0, 0.845);
   cursor: pointer;
   border: none;
   border-radius: 7px;
@@ -353,8 +360,8 @@ a {
 }
 
 .showcase .showcase__more-info .showcase__link:hover {
-  background: black;
-  color: #b3790d;
+  background: #b3790d;
+  color: white;
 }
 
 .testimonial {
@@ -450,7 +457,7 @@ a {
 }
 
 .contact .contact__section .contact__left .contact__form {
-  margin-top: 40px;
+  margin-top: 140px;
 }
 
 .contact .contact__section .contact__left .contact__form span {
@@ -506,8 +513,66 @@ a {
 
 .contact .contact__section .contact__right img {
   height: 100vh;
-  -o-object-fit: contain;
-     object-fit: contain;
+  width: 800px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  top: 895px;
+  background: rgba(0, 0, 0, 0.872);
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  padding: 25px;
+}
+
+.footer .footer__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+}
+
+.footer .footer__text .footer__logo {
+  margin-right: 10px;
+  margin-left: 40px;
+  cursor: pointer;
+}
+
+.footer .footer__text .footer__logo span {
+  color: #b3790d;
+}
+
+.footer .footer__text .footer__developer-name:hover {
+  color: #b3790d;
+  cursor: pointer;
+}
+
+.footer .footer__links {
+  margin-right: 40px;
+}
+
+.footer .footer__links ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer .footer__links .footer__link {
+  margin: 20px 10px 10px 20px;
+  color: white;
+}
+
+.footer .footer__links .footer__link:hover {
+  color: #b3790d;
+  cursor: pointer;
 }
 
 @media all and (max-width: 1029px) {
@@ -521,6 +586,17 @@ a {
     width: 250px;
     font-size: 0.9rem;
   }
+  .logo .logo__description {
+    font-size: 1.4rem;
+    margin: 0 0 28px 0;
+  }
+  .logo .logo__group ul .logol {
+    width: 130px;
+    height: 130px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    margin: 0 30px;
+  }
 }
 
 @media all and (max-width: 770px) {
@@ -533,6 +609,17 @@ a {
   .home .home__intro .home__description {
     width: 170px;
     font-size: 0.83rem;
+  }
+  .logo .logo__description {
+    font-size: 1.4rem;
+    margin: 0 0 28px 0;
+  }
+  .logo .logo__group ul .logol {
+    width: 110px;
+    height: 110px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    margin: 0 30px;
   }
 }
 
@@ -554,6 +641,47 @@ a {
   .home .home__intro .home__description {
     font-size: 0.8rem;
   }
+  .logo .logo__description {
+    font-size: 1.2rem;
+    margin: 0 0 28px 0;
+  }
+  .logo .logo__group ul .logol {
+    width: 65px;
+    height: 65px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    margin: 0 20px;
+  }
+}
+
+@media all and (max-width: 380px) {
+  .logo .logo__description {
+    font-size: 1.2rem;
+    margin: 0 0 28px 0;
+  }
+  .logo .logo__group {
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    /* Hide scrollbar for IE, Edge and Firefox */
+  }
+  .logo .logo__group ul {
+    overflow: scroll;
+  }
+  .logo .logo__group ul .logol {
+    width: 65px;
+    height: 65px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    margin: 0 20px;
+  }
+  .logo .logo__group ul::-webkit-scrollbar {
+    display: none;
+  }
+  .logo .logo__group ul {
+    -ms-overflow-style: none;
+    /*IE and Edge */
+    scrollbar-width: none;
+    /* Firefox*/
+  }
 }
 
 @media all and (max-width: 330px) {
@@ -565,6 +693,14 @@ a {
   }
   .home .home__intro .home__description {
     font-size: 0.75rem;
+  }
+  .logo .logo__description {
+    font-size: 1.1rem;
+  }
+  .logo .logo__group ul .logol {
+    width: 80px;
+    height: 80px;
+    margin: 0 25px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
