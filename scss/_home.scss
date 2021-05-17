@@ -1,0 +1,79 @@
+// HOME STYLING
+.home {
+  .home__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+  }
+
+  .home__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+  }
+
+  .home__intro {
+    position: absolute;
+    color: white;
+    z-index: 3;
+    max-width: 30%;
+    display: flex;
+    flex-flow: column wrap;
+    background: $black_color;
+    padding: 120px 10px 0 30px;
+    width: 60vh;
+    height: 100vh;
+    backdrop-filter: blur(10px);
+    // rgba(255, 175, 27, 0.667)
+
+    .home__title {
+      font-size: 6rem;
+      margin-bottom: 11px;
+
+      span {
+        color: $common_color;
+      }
+    }
+
+    .home__subtitle {
+      font-size: 1.6rem;
+      margin-bottom: 7px;
+
+      span {
+        color: $common_color;
+      }
+    }
+
+    .home__description {
+      margin-bottom: 11px;
+      width: 300px;
+      text-align: justify;
+    }
+
+    .home__contact {
+      margin-top: 25px;
+
+      .home__link {
+        text-decoration: none;
+        background: $black_color;
+        padding: 12px;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        transition: all 0.2s;
+      }
+
+      .home__link:hover {
+        background: $hover_color;
+        color: white;
+      }
+    }
+  }
+}
