@@ -1,12 +1,4 @@
 @import url("http;//fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: "Montserrat", sans-serif;
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -17,6 +9,14 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
 }
 
 .navbar {
@@ -965,6 +965,12 @@ a {
   .contact .contact__section .contact__left .contact__titles .contact__title {
     font-size: 1.5rem;
     font-size: 700;
+  }
+  .navbar .max-width {
+    margin: 0 40px;
+  }
+  .navbar .max-width .navbar__contact {
+    font-size: 0.8rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */
