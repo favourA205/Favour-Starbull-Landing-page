@@ -1,19 +1,10 @@
 @import url("http;//fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
-// @import "mediaQueries";
-// @import "commonAttributes";
-// @import "navbar";
-// @import "home";
-// @import "logo";
-// @import "showcase";
-// @import "testimonial";
-// @import "contact";
-// @import "footer";
 
 // COMMON ATTRIBUTES
 $common_color: rgb(179, 121, 13);
 $hover_color: rgba(179, 121, 13, 0.626);
 $black_color: rgba(0, 0, 0, 0.304);
-$text_color: rgba(0, 0, 0, 0.845);
+$BG_color: rgba(0, 0, 0, 0.845);
 
 html {
   scroll-behavior: smooth;
@@ -156,8 +147,8 @@ a {
 
 .logo {
   position: relative;
-  top: 658px;
-  height: 10vh;
+  top: 800px;
+  height: 26vh;
 
   .logo__description {
     display: flex;
@@ -299,7 +290,7 @@ a {
       display: flex;
       align-items: center;
       color: white;
-      background: $text_color;
+      background: $BG_color;
       cursor: pointer;
       border: none;
       border-radius: 7px;
@@ -318,7 +309,7 @@ a {
   }
 }
 
-// TESTIMONIAL
+// TESTIMONIAL STYLING
 
 .testimonial {
   position: relative;
@@ -367,12 +358,10 @@ a {
 .contact {
   position: relative;
   top: 902px;
-  // height: 100vh;
 
   .contact__section {
     display: flex;
     justify-content: space-between;
-    // height: 100vh;
 
     .contact__left {
       position: relative;
@@ -462,7 +451,7 @@ a {
   }
 }
 
-// FOOTER
+// FOOTER STYLING
 
 .footer {
   display: flex;
@@ -613,7 +602,7 @@ a {
     }
   }
 
-  // CONTACT STYLING
+  // CONTACT
 
   .contact {
     .contact__section {
@@ -668,7 +657,7 @@ a {
     }
   }
 
-  // CONTACT STYLING
+  // CONTACT
 
   .contact {
     .contact__section {
@@ -706,7 +695,7 @@ a {
   }
 }
 
-@media all and (max-width: 430px) {
+@media all and (max-width: 630px) {
   // MEDIA QUERIES-- HOME
 
   .home {
@@ -826,7 +815,7 @@ a {
     }
   }
 
-  // CONTACT STYLING
+  // CONTACT
 
   .contact {
     .contact__section {
@@ -928,7 +917,7 @@ a {
   }
 }
 
-@media all and (max-width: 330px) {
+@media all and (max-width: 380px) {
   // MEDIA QUERIES-- HOME
 
   .home {
@@ -1008,7 +997,7 @@ a {
     }
   }
 
-  // CONTACT STYLING
+  // CONTACT
 
   .contact {
     .contact__section {
@@ -1023,7 +1012,7 @@ a {
     }
   }
 
-  // NAV BAR STYLING
+  // NAV BAR
 
   .navbar {
     .max-width {
