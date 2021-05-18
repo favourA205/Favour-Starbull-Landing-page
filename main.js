@@ -23,9 +23,9 @@ sr.reveal('.logo__group',{ origin:'left',delay:500})
 
 // SCROLL SHOWCASE
 sr.reveal('.showcase__titles',{})
-sr.reveal('.row1',{ origin:'left',distance:'20px', delay:50, interval:100})
+sr.reveal('.row1',{ origin:'left', delay:50, interval:100})
 sr.reveal('.row2',{ origin:'right', delay:400})
-sr.reveal('.row3',{ origin:'left',delay:400})
+sr.reveal('.row3',{ origin:'left', delay:400})
 
 
 // SCROLL TESTIMONIAL
