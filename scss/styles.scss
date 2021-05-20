@@ -27,41 +27,41 @@ a {
 
 // NAV BAR STYLING
 
-// .navbar {
-//   position: fixed;
-//   background: $black_color;
-//   width: 100%;
-//   z-index: 999;
-//   padding: 20px 0;
-//   font-family: "Ubuntu", sans-serif;
-//   transition: all 0.3s ease;
+.navbar {
+  position: fixed;
+  background: $black_color;
+  width: 100%;
+  z-index: 999;
+  padding: 20px 0;
+  font-family: "Ubuntu", sans-serif;
+  transition: all 0.3s ease;
 
-//   .max-width {
-//     display: flex;
-//     align-items: center;
-//     justify-content: space-between;
-//     margin: 0 50px;
+  .max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 50px;
 
-//     .navbar__logo {
-//       a {
-//         color: $common_color;
-//         letter-spacing: 1px;
-//         cursor: pointer;
-//         transition: all 0.2s ease;
-//       }
-//     }
+    .navbar__logo {
+      a {
+        color: $common_color;
+        letter-spacing: 1px;
+        cursor: pointer;
+        transition: all 0.2s ease;
+      }
+    }
 
-//     .navbar__contact {
-//       color: white;
-//       cursor: pointer;
-//       transition: all 0.2s ease;
-//     }
+    .navbar__contact {
+      color: white;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
 
-//     .navbar__contact:hover {
-//       color: $common_color;
-//     }
-//   }
-// }
+    .navbar__contact:hover {
+      color: $common_color;
+    }
+  }
+}
 
 // HOME STYLING
 .home {
@@ -194,7 +194,7 @@ a {
   .showcase__titles {
     position: relative;
     top: 20px;
-    left: 40px;
+    margin-left: 40px;
     .showcase__title {
       font-size: 2rem;
       margin: 0 0 10px 0;
@@ -366,12 +366,12 @@ a {
     .contact__left {
       position: relative;
       margin-top: 80px;
-      left: 80px;
+      margin-left: 80px;
 
       .contact__titles {
         position: relative;
         top: 20px;
-        left: 40px;
+        margin-left: 40px;
         .contact__title {
           font-size: 2rem;
           margin: 0 0 10px 0;
